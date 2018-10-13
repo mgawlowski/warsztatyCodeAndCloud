@@ -11,7 +11,7 @@ namespace Warsztaty.Core
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Server=DESKTOP-BURL466;Database=CodeAndCloud;Trusted_Connection=true;");
+            optionsBuilder.UseSqlServer(@"Server=tcp:warsztatydb2018.database.windows.net,1433;Initial Catalog=warsztatyDB;Persist Security Info=False;User ID=xentix;Password=Wdupie12;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
